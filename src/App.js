@@ -9,6 +9,7 @@ import { db, auth } from './firebase';
 import './App.css';
 import ImageUpload from './ImageUpload'
 import { InstagramEmbed } from 'react-social-media-embed';
+
 import Avatar from '@mui/material/Avatar';
 
  
@@ -176,7 +177,9 @@ function App() {
           ))}</div>
         <div className="app__postsRight">
           <div style={{ display: 'flex' }}>
-            <InstagramEmbed url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} />
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+  <InstagramEmbed url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} />
+</div>
           </div>
         </div>
       </div>
